@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Nacionalidade</title>
+    <style>
+        body {
+            background: rgb(56, 55, 55);
+            font: normal 18pt Arial;
+            color: rgb(255, 208, 119);
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    Em qual país você mora? <input type="text" name="País" id="country">
+    <input type="button" value="OK" onclick="verificar()">
+
+    <div id="res">
+
+    </div>
+    
+    <script>
+        function verificar() {
+            var pais = window.document.querySelector('input#country')
+            var res = window.document.querySelector('div#res')
+            var nac = String(pais.value)
+            if (nac == 'brasil' || nac == 'Brasil') {
+                res.innerHTML += `<p>Legal! você é brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p>Uou! você é gringo? Welcome to Brazil!</p>`
+            }
+        } 
+    </script>
+
+</body>
+</html>
