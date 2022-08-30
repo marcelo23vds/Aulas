@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Share+Tech+Mono&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-size: 100%;
+    background: linear-gradient(68.15deg, #430C4C 16.62%, #150F5C 85.61%);
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px;
+}
+
+.cabecalho__logo {
+    height: 72px;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 32px;
+}
+
+.cabecalho__menu-item {
+    font-family: 'Share Tech', sans-serif;
+    color: #ECD6C4;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.conteudo {
+    margin-bottom: 48px;
+    border-top: 0.4px solid #ECD6C4;
+}
+
+.conteudo__principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10rem;
+}
+
+.conteudo__principal-escrito {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.conteudo__principal-escrito-titulo {
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
+    font-size: 64px;
+    color: rgb(255, 196, 0);
+}
+
+.conteudo__principal-escrito-subtitulo {
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+.conteudo__principal-escrito-botao {
+    background-color: #ECD6C4;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+}
+
+.conteudo__principal-escrito-botao:hover {
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.conteudo__principal-imagem {
+    height: 430px;
+}
+
+.conteudo__secundario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+
+.conteudo__secundario-titulo {
+    border-top: 0.4px solid #FFF2E7;
+    padding-top: 48px;
+    font-family: 'Share Tech Mono', monospace;
+    font-weight: 400;
+    font-size: 24px;
+    color: rgb(255, 196, 0);;
+    margin-bottom: 16px;
+}
+
+.conteudo__secundario-paragrafo {
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #ECD6C4;
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid #ECD6C4;
+}
+
+.rodape__imagem {
+    height: 100px;
+    display: block;
+    margin: 0 auto;
+    width: 250px;
+}
